@@ -8,7 +8,7 @@ This repository contains the code to perform filters to the image and implemente
 # tar –xvf mpich.tar
 •	در دایرکتوری mpich:
 
-% ./configure –prefix=/usr/local/mpich-1.2.7 | tee c.log
+# ./configure –prefix=/usr/local/mpich-1.2.7 | tee c.log
 •	اضافه کردن دستور زیر در فایل .bashrc 
 export  PATH=/home/mpich-1.2.7/bin:$PATH
 •	نصب برنامه
@@ -49,9 +49,9 @@ Station2
 
 برای اجرای یک برنامه ابتدا باید آنرا به کمک کمپایلر mpicc کامپایل کرده و فایل a.out را ایجاد می کنیم. این فایل باید در تمامی کامپیوترها در یک مسیر مشخص و ثابت کپی شود سپس با استفاده از دستور mpirun که در کامپیوتر اصلی اجرا می گردد برنامه به صورت همزمان بر روی کلیه کامپیوترها اجرا می گردد.
 
-Mpicc pmedian.c
+# Mpicc pmedian.c
 
-Mpirun –np 4 pmedian.out
+# Mpirun –np 4 pmedian.out
 
 Pmedian.c نام برنامه موازی شده و عدد 4 تعدد پردازنده های مورد استفاده است.
 
